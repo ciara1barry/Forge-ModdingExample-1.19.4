@@ -1,6 +1,8 @@
 package net.cbar.examplemod;
 
 import com.mojang.logging.LogUtils;
+import net.cbar.examplemod.item.ModCreativeModeTabs;
+import net.cbar.examplemod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +36,8 @@ public class ExampleMod {
     public ExampleMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -49,7 +53,14 @@ public class ExampleMod {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
+        if(event.getTab() == ModCreativeModeTabs.EXAMPLE_TAB) {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
