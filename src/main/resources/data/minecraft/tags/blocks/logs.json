@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "examplemod:ebony_log",
+    "examplemod:stripped_ebony_log",
+    "examplemod:ebony_wood",
+    "examplemod:stripped_ebony_wood"
+  ]
+}
