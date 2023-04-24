@@ -27,13 +27,32 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> EBONY_KEY = registerKey("ebony");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BLACK_OPAL_ORE_KEY = registerKey("black_opal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_BLACK_OPAL_ORE_KEY = registerKey("end_black_opal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_BLACK_OPAL_ORE_KEY = registerKey("nether_black_opal_ore");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest endstoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
+
+        List<OreConfiguration.TargetBlockState> overworldBlackOpalOres = List.of(OreConfiguration.target(stoneReplaceables,
+                ModBlocks.BLACK_OPAL_ORE.get().defaultBlockState()), OreConfiguration.target(deepslateReplaceables,
+                ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get().defaultBlockState()));
+
         register(context, EBONY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.EBONY_LOG.get()),
                 new StraightTrunkPlacer(5, 6, 3),
                 BlockStateProvider.simple(ModBlocks.EBONY_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, OVERWORLD_BLACK_OPAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBlackOpalOres, 9));
+        register(context, END_BLACK_OPAL_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.ENDSTONE_BLACK_OPAL_ORE.get().defaultBlockState(), 9));
+        register(context, NETHER_BLACK_OPAL_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHERRACK_BLACK_OPAL_ORE.get().defaultBlockState(), 9));
     }
 
 
