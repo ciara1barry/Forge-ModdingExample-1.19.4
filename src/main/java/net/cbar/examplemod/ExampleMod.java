@@ -69,6 +69,14 @@ public class ExampleMod {
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+
+            event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_LEAVES);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_SAPLING);
+            event.accept(ModBlocks.EBONY_PLANKS);
         }
 
         if(event.getTab() == ModCreativeModeTabs.EXAMPLE_TAB) {
@@ -80,6 +88,14 @@ public class ExampleMod {
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+
+            event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_LEAVES);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_SAPLING);
+            event.accept(ModBlocks.EBONY_PLANKS);
         }
     }
 
