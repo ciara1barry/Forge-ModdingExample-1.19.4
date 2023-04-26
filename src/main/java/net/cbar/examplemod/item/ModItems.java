@@ -11,9 +11,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MOD_ID);
 
-    public static  final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",
+    public static  final RegistryObject<Item> ONYX = ITEMS.register("onyx",
             () -> new Item(new Item.Properties()));
-    public static  final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
+    public static  final RegistryObject<Item> RAW_ONYX = ITEMS.register("raw_onyx",
             () -> new Item(new Item.Properties()));
 
 

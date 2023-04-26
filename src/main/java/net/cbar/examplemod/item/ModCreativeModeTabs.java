@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event){
         EXAMPLE_TAB = event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MOD_ID, "example_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.BLACK_OPAL.get())).title(Component.translatable(
+                builder -> builder.icon(() -> new ItemStack(ModItems.ONYX.get())).title(Component.translatable(
                         "creativemodetab.example_tab")));
     }
 }

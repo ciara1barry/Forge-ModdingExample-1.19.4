@@ -23,30 +23,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        oreSmelting(consumer, List.of(ModItems.RAW_BLACK_OPAL.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 200, "black_opal");
-        oreSmelting(consumer, List.of(ModBlocks.BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 200, "black_opal");
-        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 200, "black_opal");
-        oreSmelting(consumer, List.of(ModBlocks.NETHERRACK_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 200, "black_opal");
-        oreSmelting(consumer, List.of(ModBlocks.ENDSTONE_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 200, "black_opal");
+        oreSmelting(consumer, List.of(ModItems.RAW_ONYX.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 200, "onyx");
+        oreSmelting(consumer, List.of(ModBlocks.ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 200, "onyx");
+        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 200, "onyx");
+        oreSmelting(consumer, List.of(ModBlocks.NETHERRACK_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 200, "onyx");
+        oreSmelting(consumer, List.of(ModBlocks.ENDSTONE_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 200, "onyx");
 
-        oreBlasting(consumer, List.of(ModItems.RAW_BLACK_OPAL.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 100, "black_opal");
-        oreBlasting(consumer, List.of(ModBlocks.BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 100, "black_opal");
-        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 100, "black_opal");
-        oreBlasting(consumer, List.of(ModBlocks.NETHERRACK_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 100, "black_opal");
-        oreBlasting(consumer, List.of(ModBlocks.ENDSTONE_BLACK_OPAL_ORE.get()), RecipeCategory.MISC,
-                ModItems.BLACK_OPAL.get(), 0.7f, 100, "black_opal");
+        oreBlasting(consumer, List.of(ModItems.RAW_ONYX.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 100, "onyx");
+        oreBlasting(consumer, List.of(ModBlocks.ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 100, "onyx");
+        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 100, "onyx");
+        oreBlasting(consumer, List.of(ModBlocks.NETHERRACK_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 100, "onyx");
+        oreBlasting(consumer, List.of(ModBlocks.ENDSTONE_ONYX_ORE.get()), RecipeCategory.MISC,
+                ModItems.ONYX.get(), 0.7f, 100, "onyx");
 
-        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.BLACK_OPAL.get(),
-                RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get());
+        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.ONYX.get(),
+                RecipeCategory.MISC, ModBlocks.ONYX_BLOCK.get());
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

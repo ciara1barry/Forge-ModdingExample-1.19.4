@@ -20,11 +20,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.BLACK_OPAL_BLOCK);
-        blockWithItem(ModBlocks.BLACK_OPAL_ORE);
-        blockWithItem(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
-        blockWithItem(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
-        blockWithItem(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+        blockWithItem(ModBlocks.ONYX_BLOCK);
+        blockWithItem(ModBlocks.ONYX_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ONYX_ORE);
+        blockWithItem(ModBlocks.NETHERRACK_ONYX_ORE);
+        blockWithItem(ModBlocks.ENDSTONE_ONYX_ORE);
 
         logBlock(((RotatedPillarBlock) ModBlocks.EBONY_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.EBONY_WOOD.get(), blockTexture(ModBlocks.EBONY_LOG.get()), blockTexture(ModBlocks.EBONY_LOG.get()));

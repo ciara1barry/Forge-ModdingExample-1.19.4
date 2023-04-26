@@ -18,16 +18,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.BLACK_OPAL_BLOCK.get());
+        dropSelf(ModBlocks.ONYX_BLOCK.get());
 
-        add(ModBlocks.BLACK_OPAL_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
-        add(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
-        add(ModBlocks.NETHERRACK_BLACK_OPAL_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.NETHERRACK_BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
-        add(ModBlocks.ENDSTONE_BLACK_OPAL_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.ENDSTONE_BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
+        add(ModBlocks.ONYX_ORE.get(),
+                (block) -> createOreDrop(ModBlocks.ONYX_ORE.get(), ModItems.RAW_ONYX.get()));
+        add(ModBlocks.DEEPSLATE_ONYX_ORE.get(),
+                (block) -> createOreDrop(ModBlocks.DEEPSLATE_ONYX_ORE.get(), ModItems.RAW_ONYX.get()));
+        add(ModBlocks.NETHERRACK_ONYX_ORE.get(),
+                (block) -> createOreDrop(ModBlocks.NETHERRACK_ONYX_ORE.get(), ModItems.RAW_ONYX.get()));
+        add(ModBlocks.ENDSTONE_ONYX_ORE.get(),
+                (block) -> createOreDrop(ModBlocks.ENDSTONE_ONYX_ORE.get(), ModItems.RAW_ONYX.get()));
 
         this.dropSelf(ModBlocks.EBONY_LOG.get());
         this.dropSelf(ModBlocks.EBONY_WOOD.get());

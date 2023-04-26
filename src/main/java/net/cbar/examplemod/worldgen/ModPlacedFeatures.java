@@ -21,9 +21,9 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> EBONY_PLACED_KEY = createKey("ebony_placed");
 
-    public static final ResourceKey<PlacedFeature> BLACK_OPAL_PLACED_KEY = createKey("black_opal_placed");
-    public static final ResourceKey<PlacedFeature> END_BLACK_OPAL_PLACED_KEY = createKey("end_black_opal_placed");
-    public static final ResourceKey<PlacedFeature> NETHER_BLACK_OPAL_PLACED_KEY = createKey("nether_black_opal_placed");
+    public static final ResourceKey<PlacedFeature> ONYX_PLACED_KEY = createKey("onyx_placed");
+    public static final ResourceKey<PlacedFeature> END_ONYX_PLACED_KEY = createKey("end_onyx_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_ONYX_PLACED_KEY = createKey("nether_onyx_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -31,13 +31,13 @@ public class ModPlacedFeatures {
         register(context, EBONY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.EBONY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2), ModBlocks.EBONY_SAPLING.get()));
 
-        register(context, BLACK_OPAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_BLACK_OPAL_ORE_KEY),
+        register(context, ONYX_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ONYX_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, END_BLACK_OPAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_BLACK_OPAL_ORE_KEY),
+        register(context, END_ONYX_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_ONYX_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, NETHER_BLACK_OPAL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_BLACK_OPAL_ORE_KEY),
+        register(context, NETHER_ONYX_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ONYX_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }

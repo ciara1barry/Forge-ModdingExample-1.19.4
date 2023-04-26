@@ -56,19 +56,19 @@ public class ExampleMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BLACK_OPAL);
-            event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.ONYX);
+            event.accept(ModItems.RAW_ONYX);
         }
 
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.ONYX_BLOCK);
         }
 
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.BLACK_OPAL_ORE);
-            event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
-            event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
-            event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.ONYX_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ONYX_ORE);
+            event.accept(ModBlocks.NETHERRACK_ONYX_ORE);
+            event.accept(ModBlocks.ENDSTONE_ONYX_ORE);
 
             event.accept(ModBlocks.EBONY_LOG);
             event.accept(ModBlocks.EBONY_WOOD);
@@ -80,14 +80,14 @@ public class ExampleMod {
         }
 
         if(event.getTab() == ModCreativeModeTabs.EXAMPLE_TAB) {
-            event.accept(ModItems.BLACK_OPAL);
-            event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.ONYX);
+            event.accept(ModItems.RAW_ONYX);
 
-            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
-            event.accept(ModBlocks.BLACK_OPAL_ORE);
-            event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
-            event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
-            event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.ONYX_BLOCK);
+            event.accept(ModBlocks.ONYX_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ONYX_ORE);
+            event.accept(ModBlocks.NETHERRACK_ONYX_ORE);
+            event.accept(ModBlocks.ENDSTONE_ONYX_ORE);
 
             event.accept(ModBlocks.EBONY_LOG);
             event.accept(ModBlocks.EBONY_WOOD);

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#is_end",
-  "features": "examplemod:end_black_opal_placed",
+  "features": "examplemod:end_onyx_placed",
   "step": "underground_ores"
 }

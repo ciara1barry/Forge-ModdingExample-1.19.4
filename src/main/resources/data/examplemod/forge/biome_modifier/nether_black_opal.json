@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#is_nether",
-  "features": "examplemod:nether_black_opal_placed",
+  "features": "examplemod:nether_onyx_placed",
   "step": "underground_ores"
 }

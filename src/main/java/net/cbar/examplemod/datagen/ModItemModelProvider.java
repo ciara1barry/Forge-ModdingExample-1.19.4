@@ -19,8 +19,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.BLACK_OPAL);
-        simpleItem(ModItems.RAW_BLACK_OPAL);
+        simpleItem(ModItems.ONYX);
+        simpleItem(ModItems.RAW_ONYX);
         saplingItem(ModBlocks.EBONY_SAPLING);
     }
 
