@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_onyx": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "examplemod:raw_onyx"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "examplemod:onyx_from_smelting_raw_onyx"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_onyx",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "examplemod:onyx_from_smelting_raw_onyx"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "onyx",
+  "ingredient": {
+    "item": "examplemod:onyx_ore"
+  },
+  "result": "examplemod:onyx"
+}
